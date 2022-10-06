@@ -1,0 +1,24 @@
+name: remote
+root: ~/
+
+windows:
+  - dragon:
+      root: ~/code/dragon/
+      layout: 9e24,255x53,0,0{163x53,0,0,0,91x53,164,0[91x26,164,0,3,91x26,164,27,7]}
+      panes:
+        - nvim
+        - 
+        - npm run dev
+  - tiger:
+      on_project_start: pg_ctl start
+      root: ~/code/tiger/
+      layout: 9e24,255x53,0,0{163x53,0,0,0,91x53,164,0[91x26,164,0,3,91x26,164,27,7]}
+      panes:
+        - 
+        - redis-server
+        - mix deps.get && mix phx.server
+  - blank:
+      root: ~/code/
+      panes:
+        - 
+
