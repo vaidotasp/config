@@ -1,1 +1,0 @@
-/Users/vp/code/dotfiles/nvim/lua/trouble.lua
