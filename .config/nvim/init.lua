@@ -1,1 +1,10 @@
-/Users/vp/code/dotfiles/nvim/init.lua
+require('settings')
+require('plugins')
+require('completion')
+require('utils')
+require('tsit')
+require('_gitsigns')
+require('lsp')
+require('_tree')
+require('_telescope')
+
