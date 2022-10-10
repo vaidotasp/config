@@ -44,6 +44,7 @@ cmd [[syntax on]]
 opt.undodir = os.getenv("HOME") .. "/.config/nvim/undodir"
 
 set.undofile = true
+set.mouse = "nv"
 
 set.smartindent = true
 opt.autoindent = true -- automatically set indent of new line
