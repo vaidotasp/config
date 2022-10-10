@@ -31,7 +31,6 @@ require('packer').startup(function(use)
   -- use 'junegunn/fzf.vim'
   use 'lewis6991/gitsigns.nvim'
   use 'alvarosevilla95/luatab.nvim'
-  use { "catppuccin/nvim", as = "catppuccin" }
   use 'vim-test/vim-test'
   use 'simrat39/rust-tools.nvim'
   use 'romgrk/barbar.nvim'
@@ -67,5 +66,9 @@ require('packer').startup(function(use)
     -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
     -- In Vim, compat mode is turned on as Lush only works in Neovim.
     requires = "rktjmp/lush.nvim"
+}
+  use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 }
 end)
