@@ -6,8 +6,8 @@ alias gs="git status"
 alias go="git checkout"
 alias gb="git branch --sort=-committerdate"
 alias edf="nvim ~/code/dotfiles"
-alias ls="exa --icons -laTL1"
-alias ll="exa --icons -laTL1"
+# alias ls="exa --icons -laTL1"
+# alias ll="exa --icons -laTL1"
 alias ex="exa --icons -laTL1"
 alias dev="npm run dev"
 alias cat="bat"
@@ -20,6 +20,7 @@ alias ts="mix deps.get && iex -S mix phx.server"
 alias gfh="git log -p --"
 alias gco="git co"
 alias gre="git restore ."
+alias vim="nvim"
 
 
 export EDITOR='nvim'

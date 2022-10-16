@@ -80,6 +80,19 @@ opt.undodir = os.getenv("HOME") .. "/.config/nvim/undodir"
 set.undofile = true
 set.mouse = "nv"
 
+set.list = true
+set.listchars = {
+  eol = '¬',
+  trail = "⋅",
+  tab = "→ ",
+  extends = "❯",
+  precedes = "❮"
+  -- tab = '▸\',
+  -- extends = '❯\',
+  -- precedes = '❮\',
+}
+
+
 set.smartindent = true
 opt.autoindent = true -- automatically set indent of new line
 opt.ttyfast = true -- faster redrawing
