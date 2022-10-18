@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
-  catppuccin = {
-    loaded = true,
-    path = "/Users/vp/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -119,16 +114,6 @@ _G.packer_plugins = {
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/fugitive-gitlab.vim",
     url = "https://github.com/shumphrey/fugitive-gitlab.vim"
   },
-  fzf = {
-    loaded = true,
-    path = "/Users/vp/.local/share/nvim/site/pack/packer/start/fzf",
-    url = "https://github.com/junegunn/fzf"
-  },
-  ["fzf.vim"] = {
-    loaded = true,
-    path = "/Users/vp/.local/share/nvim/site/pack/packer/start/fzf.vim",
-    url = "https://github.com/junegunn/fzf.vim"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -154,10 +139,20 @@ _G.packer_plugins = {
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
     url = "https://github.com/onsails/lspkind.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/vp/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["luatab.nvim"] = {
     loaded = true,
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/luatab.nvim",
     url = "https://github.com/alvarosevilla95/luatab.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/Users/vp/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
   },
   neoformat = {
     loaded = true,
@@ -199,6 +194,11 @@ _G.packer_plugins = {
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["rust-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/vp/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -213,11 +213,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/vp/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["trouble.nvim"] = {
     config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0" },
@@ -279,6 +274,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["zenbones.nvim"] = {
+    loaded = true,
+    path = "/Users/vp/.local/share/nvim/site/pack/packer/start/zenbones.nvim",
+    url = "https://github.com/mcchrish/zenbones.nvim"
   }
 }
 
