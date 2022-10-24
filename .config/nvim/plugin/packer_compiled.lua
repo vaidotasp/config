@@ -144,11 +144,6 @@ _G.packer_plugins = {
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["luatab.nvim"] = {
-    loaded = true,
-    path = "/Users/vp/.local/share/nvim/site/pack/packer/start/luatab.nvim",
-    url = "https://github.com/alvarosevilla95/luatab.nvim"
-  },
   ["lush.nvim"] = {
     loaded = true,
     path = "/Users/vp/.local/share/nvim/site/pack/packer/start/lush.nvim",

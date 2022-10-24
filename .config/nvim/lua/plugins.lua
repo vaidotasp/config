@@ -30,7 +30,6 @@ require('packer').startup(function(use)
   -- use 'junegunn/fzf'
   -- use 'junegunn/fzf.vim'
   use 'lewis6991/gitsigns.nvim'
-  use 'alvarosevilla95/luatab.nvim'
   use 'vim-test/vim-test'
   use 'simrat39/rust-tools.nvim'
   use 'romgrk/barbar.nvim'
