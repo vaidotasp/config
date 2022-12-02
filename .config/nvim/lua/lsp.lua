@@ -1,6 +1,9 @@
 
 local lspconfig = require('lspconfig')
 
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
 local on_attach = function(client, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local opts = { noremap=true, silent=true }
@@ -26,11 +29,6 @@ end
 
 local util = require "lspconfig/util"
 
--- local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
--- local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
-
 -- TS/JS
 lspconfig.tsserver.setup {
   capabilities = capabilities,
@@ -38,13 +36,17 @@ lspconfig.tsserver.setup {
   flags = {
     debounce_text_changes = 200,
   },
-  root_dir = util.root_pattern(".git"),
+  root_dir = util.root_pattern("package.json"),
+}
+
+lspconfig.denols.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+  root_dir = util.root_pattern("deno.json", "deno.jsonc"),
 }
 
 -- RUST OR BUST
-local rt = require("rust-tools")
-
-rt.setup({
+require("rust-tools").setup {
   tools = {
     autoSetHints = true,
     runnables = { use_telescope = true },
@@ -57,9 +59,9 @@ rt.setup({
       execute_command = function(command, args)
         vim.cmd("T " .. require("rust-tools.utils.utils").make_command_from_args(command, args))
       end,
-      },
     },
-    server = {
+  },
+  server = {
     on_attach = on_attach,
     capabilities = capabilities,
     flags = {
@@ -78,12 +80,13 @@ rt.setup({
       },
     },
   },
-})
+}
+
 
 -- ESLINT
 lspconfig.eslint.setup {}
 
--- ELIXIR
+-- ELIXIR -> not sure if this even works :(
 local path_to_elixirls = vim.fn.expand("~/code/projects/elixir-ls/release/language_server.sh")
 lspconfig.elixirls.setup({
   cmd = {path_to_elixirls},

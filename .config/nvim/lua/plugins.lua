@@ -16,6 +16,7 @@ require('packer').startup(function(use)
   use 'mbbill/undotree'
   use 'stsewd/gx-extended.vim'
   use 'romainl/vim-cool'
+  use 'nvim-treesitter/nvim-treesitter-context'
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
@@ -25,6 +26,9 @@ require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/vim-vsnip'
+  use 'hrsh7th/cmp-vsnip'
+
   use 'neovim/nvim-lspconfig'
   use 'onsails/lspkind.nvim'
   -- use 'junegunn/fzf'

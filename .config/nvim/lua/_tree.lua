@@ -32,6 +32,9 @@ require("nvim-tree").setup({
 },
 })
 
+require'treesitter-context'.setup{}
+
+
 nnoremap("<leader>ge", ":NvimTreeToggle<cr>")
 nnoremap("<leader>gf", ":NvimTreeFindFile<cr>")
 

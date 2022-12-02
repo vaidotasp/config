@@ -16,6 +16,8 @@ telescope.setup{
         ["<C-t>"] = actions.select_tab, -- open selection in new tab
         ["<C-y>"] = actions.preview_scrolling_up,
         ["<C-e>"] = actions.preview_scrolling_down,
+        ["<C-s>"] = actions.smart_send_to_qflist,
+
         -- ["<C-m>"] = actions.smart_send_to_qflist + actions.open_qflist,
         --   -- map actions.which_key to <C-h> (default: <C-/>)
           -- actions.which_key shows the mappings for your picker,
