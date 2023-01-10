@@ -18,7 +18,7 @@ require("nvim-tree").setup({
     add_trailing = false,
     group_empty = true,
     highlight_git = true,
-    highlight_opened_files = "all",
+    highlight_opened_files = "none",
     indent_markers = {
       enable = true
     },
@@ -29,10 +29,9 @@ require("nvim-tree").setup({
   git = {
     enable = true,
     ignore = false
-},
+  },
 })
 
-require'treesitter-context'.setup{}
 
 
 nnoremap("<leader>ge", ":NvimTreeToggle<cr>")

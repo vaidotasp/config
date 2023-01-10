@@ -17,6 +17,7 @@ alias gfh="git log -p --"
 alias gco="git checkout"
 alias gre="git restore ."
 alias vim="nvim"
+alias gopen="$HOME/code/projects/gopen.sh"
 
 
 export EDITOR='nvim'
@@ -44,17 +45,18 @@ export FZF_DEFAULT_COMMAND='fd --type f -HI'
 # eval "$(starship init zsh)"
 
 
-# bun completions
-[ -s "/Users/vp/.bun/_bun" ] && source "/Users/vp/.bun/_bun"
 
 source <(remotectl completion zsh)
 compdef _remotectl remotectl
 
 
 # Bun
-export BUN_INSTALL="/Users/vp/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-# export PATH="~/.emacs.d/bin"
 export REMOTE_USERNAME=vaidotas@remote.com
 
 export AWS_PROFILE=sts
+
+# fnm
+# export PATH="/Users/vp/.fnm:$PATH"
+# eval "`fnm env`"
+# eval "$(fnm env --use-on-cd)"
+

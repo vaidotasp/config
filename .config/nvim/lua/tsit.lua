@@ -1,5 +1,5 @@
 require("nvim-treesitter.configs").setup {
- ensure_installed = {"bash", "c", "css", "html", "javascript", "lua", "python", "rust", "typescript", "vim", "elixir"},
+ ensure_installed = {"json", "bash", "c", "css", "html", "javascript", "lua", "python", "rust", "typescript", "vim", "elixir"},
   highlight = {
     enable = true,
     use_languagetree = true
@@ -13,4 +13,5 @@ require("nvim-treesitter.configs").setup {
     extended_mode = true,
     max_file_lines = 1000
   },
+  auto_install = true,
 }

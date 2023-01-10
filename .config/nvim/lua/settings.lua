@@ -17,6 +17,16 @@ vim.cmd("let g:test#neovim#start_normal = 1")
 
 require('colorbuddy').colorscheme("gruvbox")
 
+-- https://github.com/nvim-treesitter/nvim-treesitter-context
+require'treesitter-context'.setup{}
+
+-- https://github.com/JoosepAlviste/nvim-ts-context-commentstring
+require'nvim-treesitter.configs'.setup {
+  context_commentstring = {
+    enable = true
+  }
+}
+
 -- vim.cmd("let g:zenbones_italic_comments = v:false")
 -- vim.cmd("let g:zenbones_italic = v:false")
 -- require('colorbuddy').colorscheme("zenbones")

@@ -7,6 +7,7 @@ require('packer').startup(function(use)
   use 'tpope/vim-rhubarb'
   use 'tpope/vim-surround'
   use 'tpope/vim-commentary'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'tpope/vim-sleuth'
   use 'findango/vim-mdx' -- mdx syntax highlight
   use 'sbdchd/neoformat' --universal formatter
@@ -62,6 +63,7 @@ require('packer').startup(function(use)
   requires = { {'nvim-lua/plenary.nvim'} }
 }
   use 'nvim-telescope/telescope-rg.nvim'
+  use 'nvim-telescope/telescope-symbols.nvim'
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use {
     "mcchrish/zenbones.nvim",

@@ -1,0 +1,5 @@
+[[language]]
+name = "typescript"
+auto-format = false
+formatter = { command = "prettier" , args = ["--parser", "typescript"] }
+
